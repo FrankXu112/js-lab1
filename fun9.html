@@ -1,0 +1,28 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function lastChars(str1,str2) {
+			if (str1.length > 0 && str2.length > 0){
+				return str1[0] + str2[str2.length - 1]
+			}
+			else if(str1.length == 0 && str2.length > 0){
+				return "@" + str2[str2.length - 1]
+			} 
+			else if(str1.length > 0 && str2.length == 0){
+				return str1[0] + "@"
+			}
+			else{
+				return "@@"
+			}
+		}
+		console.log(lastChars("last", "chars"))
+		console.log(lastChars("yo", "java"))
+		console.log(lastChars("hi", ""))
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

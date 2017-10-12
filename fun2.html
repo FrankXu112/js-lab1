@@ -1,0 +1,29 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function  endsLy(str1) {
+			var len = str1.length;
+		  var ly = "ly";
+	  
+		  if (len < 2){
+		    return false;
+		  }
+		  else if (str1.substring(len - 2) == ly){
+		    return true;
+		  }
+		  else{
+		    return false;
+		  }
+		}
+		console.log(endsLy("oddly"))
+    console.log(endsLy("y"))
+    console.log(endsLy("oddy"))
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

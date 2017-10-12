@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function conCat(str1,str2) {
+			if(str1[str1.length - 1] == str2[0]){
+				return str1 + str2.slice(1)
+			}
+			else{
+				return str1 + str2
+			}
+		}
+		console.log(conCat("abc", "cat"))
+		console.log(conCat("dog", "cat"))
+		console.log(conCat("abc", ""))
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

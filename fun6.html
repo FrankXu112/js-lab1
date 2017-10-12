@@ -1,0 +1,26 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function frontAgain(str1) {
+			var len = str1.length
+			if(len <= 2){
+				return true
+			}
+			else if(len > 2 && str1.slice(0,2) == str1.slice(len-2)){
+				return true
+			}
+			else{
+				return false
+			}
+		}
+		console.log(frontAgain("edited"))
+		console.log(frontAgain("edit"))
+		console.log(frontAgain("ed"))
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

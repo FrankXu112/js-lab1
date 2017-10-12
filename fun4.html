@@ -1,0 +1,24 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function right2(str1) {
+			if (str1.length > 2){
+				var a = str1.slice(-2)
+				var b = str1.slice(0, (str1.length - 2))
+				return a + b
+			}
+			else{
+				return str1
+			}
+		}
+		console.log(right2("Hello"))
+		console.log(right2("java"))
+		console.log(right2("Hi"))
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
